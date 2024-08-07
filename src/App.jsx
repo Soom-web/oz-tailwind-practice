@@ -6,8 +6,8 @@ import Header from "./components/Header";
 function App() {
   return (
     <main>
-      <Header />
-      <section>
+      <Header/>
+      <section className="flex flex-wrap justify-center gap-5 px-5 py-10">
         {contents.map((el) => (
           <Content key={el.id} content={el} />
         ))}
